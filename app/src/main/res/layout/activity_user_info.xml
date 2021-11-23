@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/layout_Booking_parent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp" >
+
+        </TableRow>
+
+
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+
+            android:layout_marginRight="15dp" >
+            <TextView
+                android:id="@+id/txt_userinfo_Rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/textSizeLarge"
+                android:text="@string/username" />
+
+            <EditText
+                android:id="@+id/edt_userinfo_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:ems="10"
+                android:hint="@string/username"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:background="@drawable/edite_arrow"
+                android:textSize="@dimen/textSizeSmall"
+                android:inputType="text" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" >
+
+            <TextView
+                android:id="@+id/txt_userinfo_comm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="#000000"
+                android:textSize="@dimen/textSizeLarge"
+                android:text="@string/password" />
+
+            <EditText
+                android:id="@+id/edt_userinfo_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:ems="10"
+                android:textSize="@dimen/textSizeSmall"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:background="@drawable/edite_arrow"
+                android:hint="@string/password"
+                android:inputType="text" />
+        </RelativeLayout>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding1"
+            android:layout_marginRight="15dp" >
+            <Button
+                android:id="@+id/btn_userinfo_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rect_button"
+                android:text="@string/submit"/>
+
+            <Button
+                android:id="@+id/btn_userinfo_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rect_button"
+                android:text="@string/update" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding1"
+            android:layout_marginRight="15dp" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:text="@string/note1"/>
+
+
+
+        </TableRow>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/backgroundcolor"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/textSizeLarge"/>
+
+            <TextView
+                android:id="@+id/txt_versionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSizeLarge"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+        </TableRow>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="97dp"
+            android:padding="20dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_editext"
+                android:orientation="vertical"   >
+
+                <EditText
+                    android:id="@+id/edt_login_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/txt_newfarmer_fcontact"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/txt_newfarmer_fcontact"
+                    android:background="@drawable/edite_arrow"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/username"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/textSizeLarge" >
+
+                    <requestFocus />
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/txt_newfarmer_fcontact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:background="@drawable/grid"
+                    android:src="@drawable/username"
+                    android:textSize="@dimen/textSizeLarge" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_editext"
+                android:orientation="vertical"   >
+
+                <EditText
+                    android:id="@+id/edt_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/txt_passowrd"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/txt_passowrd"
+                    android:background="@drawable/edite_arrow"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="@string/password"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/textSizeLarge" >
+
+                    <requestFocus />
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/txt_passowrd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:background="@drawable/grid"
+                    android:src="@drawable/lock"
+                    android:textSize="@dimen/textSizeLarge" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/padding1">
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSizeLarge"
+                android:textColor="#FFFFFF"
+                android:layout_weight="0.7"
+                android:text="@string/remember"/>
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/textSizeLarge"
+            android:padding="@dimen/padding1">
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="@dimen/textSizeLarge"
+                android:layout_weight="1"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rect_button"
+                android:text="@string/login">
+            </Button>
+
+
+
+        </TableRow>
+
+    </LinearLayout>
+
+</ScrollView>
